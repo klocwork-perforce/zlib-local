@@ -201,6 +201,15 @@ void defetcible() {
 	gzerror(file, &err);
 }
 
+void defetcible2() {
+	printf("gzgets()");
+	
+	gzFile file;
+	int err2;
+	
+	gzerror(file, &err2);
+}
+
 
 /* ===========================================================================
  * Test deflate() with small buffers

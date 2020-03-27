@@ -198,7 +198,7 @@ void defetcible() {
 	gzFile file;
 	int err;
 	
-	gzerror(file, &err)
+	gzerror(file, &err);
 }
 
 

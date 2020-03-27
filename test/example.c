@@ -194,6 +194,14 @@ void test_gzio(fname, uncompr, uncomprLen)
 
 #endif /* Z_SOLO */
 
+void defetcible() {
+	gzFile file;
+	int err;
+	
+	gzerror(file, &err)
+}
+
+
 /* ===========================================================================
  * Test deflate() with small buffers
  */

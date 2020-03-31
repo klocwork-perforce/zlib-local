@@ -210,6 +210,14 @@ void defetcible2() {
 	gzerror(file, &err2);
 }
 
+void defetcible_23() {
+	gzFile filez;
+	int errz;
+	int brr;
+	
+	gzerror(filez, &errz);
+}
+
 
 /* ===========================================================================
  * Test deflate() with small buffers

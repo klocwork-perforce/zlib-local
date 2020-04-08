@@ -537,16 +537,24 @@ const char * ZEXPORT gzerror(file, errnum)
 
     /* get internal structure and check integrity */
     if (file == NULL)
-        return NULL;
+        return gnullcall();
     state = (gz_statep)file;
     if (state->mode != GZ_READ && state->mode != GZ_WRITE)
-        return NULL;
+        return gnullcall();
 
     /* return error information */
     if (errnum != NULL)
         *errnum = state->err;
     return state->err == Z_MEM_ERROR ? "out of memory" :
                                        (state->msg == NULL ? "" : state->msg);
+}
+
+const char * ZEXPORT gnullcall() {
+	return gnulltreturn();
+}
+
+const char * ZEXPORT gnulltreturn() {
+	return NULL;
 }
 
 /* -- see zlib.h -- */

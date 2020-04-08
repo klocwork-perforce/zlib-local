@@ -549,11 +549,11 @@ const char * ZEXPORT gzerror(file, errnum)
                                        (state->msg == NULL ? "" : state->msg);
 }
 
-const char * ZEXPORT gnullcall() {
+int gnullcall() {
 	return gnulltreturn();
 }
 
-const char * ZEXPORT gnulltreturn() {
+int gnulltreturn() {
 	return NULL;
 }
 

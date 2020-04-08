@@ -19,6 +19,14 @@
 local void gz_reset OF((gz_statep));
 local gzFile gz_open OF((const void *, int, const char *));
 
+int gnullcall() {
+	return gnulltreturn();
+}
+
+int gnulltreturn() {
+	return NULL;
+}
+
 #if defined UNDER_CE
 
 /* Map the Windows error number in ERROR to a locale-dependent error message

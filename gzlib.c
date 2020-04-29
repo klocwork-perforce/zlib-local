@@ -29,7 +29,10 @@ local gzFile gz_open OF((const void *, int, const char *));
    overwritten by a subsequent call to gz_strwinerror
 
    The gz_strwinerror function does not change the current setting of
-   GetLastError. */
+   GetLastError. 
+   
+   Some shit been added   
+   */
 char ZLIB_INTERNAL *gz_strwinerror (error)
      DWORD error;
 {

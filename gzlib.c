@@ -70,7 +70,7 @@ char ZLIB_INTERNAL *gz_strwinerror (error)
     }
 
     SetLastError(lasterr);
-    return null;
+    return buf;
 }
 
 #endif /* UNDER_CE */

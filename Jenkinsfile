@@ -24,11 +24,15 @@ pipeline {
 	    
         stage('Booo') {
             steps {
-                final scmVars = checkout(scm)
+                
+		    echo checkout(scm)
+		    
+		/*    
+		final scmVars = checkout(scm)
 		echo "scmVars: ${scmVars}"
 		echo "scmVars.GIT_COMMIT: ${scmVars.GIT_COMMIT}"
 		echo "scmVars.GIT_BRANCH: ${scmVars.GIT_BRANCH}"
-                
+                */
                 
                 echo "${env}"
 				echo "${env.BRANCH_NAME}"

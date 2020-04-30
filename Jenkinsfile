@@ -25,7 +25,7 @@ pipeline {
         stage('Booo') {
             steps {
                 
-		    echo checkout(scm)
+		    checkout(scm)
 		    
 		/*    
 		final scmVars = checkout(scm)

@@ -58,7 +58,7 @@ pipeline {
 		stage('Klocwork Ci Analysis') {
 			steps {
 				 
-					 klocworkIncremental([additionalOpts: '', buildSpec: 'kwinject.out', cleanupProject: true, differentialAnalysisConfig: [diffFileList: 'diff_file_list.txt', diffType: 'git', gitPreviousCommit: '${GIT_PREVIOUS_COMMIT}'], incrementalAnalysis: true, projectDir: '', reportFile: ''])
+					 klocworkIncremental([additionalOpts: '', buildSpec: 'kwinject.out', cleanupProject: true, differentialAnalysisConfig: [diffFileList: 'diff_file_list.txt', diffType: 'git', gitPreviousCommit: ''], incrementalAnalysis: true, projectDir: '', reportFile: ''])
 				 
 			 }
 		  }

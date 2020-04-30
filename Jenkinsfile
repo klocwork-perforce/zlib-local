@@ -33,11 +33,10 @@ pipeline {
 		echo "scmVars.GIT_COMMIT: ${scmVars.GIT_COMMIT}"
 		echo "scmVars.GIT_BRANCH: ${scmVars.GIT_BRANCH}"
                 */
-                
-                echo "${env}"
-				echo "${env.BRANCH_NAME}"
-				echo '${env.GIT_PREVIOUS_COMMIT}'
-				echo "${env.GIT_COMMIT}"  
+                                
+				echo "env branch name ${env.BRANCH_NAME}"
+				echo "env prev commit ${env.GIT_PREVIOUS_COMMIT}"
+				echo "env commit ${env.GIT_COMMIT}"  
             }
         }
 	    

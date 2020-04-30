@@ -25,7 +25,8 @@ pipeline {
         stage('Booo') {
             steps {
                 
-		     scmVars = checkout(scm)
+		   def scmVars = checkout(scm)
+		   echo "scmVars: ${scmVars}"
 		    
 		/*    
 		final scmVars = checkout(scm)

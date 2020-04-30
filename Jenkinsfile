@@ -24,7 +24,7 @@ pipeline {
 	    
         stage('Booo') {
             steps {
-                checkout scm
+                scmInfo = checkout scm
                 
                 echo "scm : ${scmInfo}"
                 echo "${scmInfo.GIT_COMMIT}"

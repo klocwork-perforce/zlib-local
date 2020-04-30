@@ -10,7 +10,7 @@ pipeline {
     }
    
    stages {
-       /*
+       /* cool
 	   stage('Get src from git') {
 			 steps {
 				git credentialsId: '19532756-711b-4217-b216-06ef0f03cd26', url: 'https://github.com/butylin/zlib-local.git'

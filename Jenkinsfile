@@ -24,9 +24,15 @@ pipeline {
 	    
         stage('Booo') {
             steps {
+		    script {
+		    	env.MYVAR = "hmm"
+		   	echo "scmVars: ${env.MYVAR}"
+			echo "env branch name ${env.BRANCH_NAME}"
+			echo "env prev commit ${env.GIT_PREVIOUS_COMMIT}"
+			echo "env commit ${env.GIT_COMMIT}"  
+		    }
                 
-		   env.MYVAR = "hmm"
-		   echo "scmVars: ${env.MYVAR}"
+		   
 		    
 		/*    
 		final scmVars = checkout(scm)
@@ -35,9 +41,7 @@ pipeline {
 		echo "scmVars.GIT_BRANCH: ${scmVars.GIT_BRANCH}"
                 */
                                 
-				echo "env branch name ${env.BRANCH_NAME}"
-				echo "env prev commit ${env.GIT_PREVIOUS_COMMIT}"
-				echo "env commit ${env.GIT_COMMIT}"  
+				
             }
         }
 	    

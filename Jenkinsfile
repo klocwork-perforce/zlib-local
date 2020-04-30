@@ -25,7 +25,7 @@ pipeline {
         stage('Booo') {
             steps {
                 
-		    /* checkout(scm) */
+		     scmVars = checkout(scm)
 		    
 		/*    
 		final scmVars = checkout(scm)

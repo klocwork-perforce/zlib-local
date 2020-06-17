@@ -4,7 +4,7 @@ pipeline {
    environment {
 		KLOCWORK_URL = "http://localhost:8080"
 		KLOCWORK_PROJECT = "zlib-pipeline"
-		KLOCWORK_LICENSE_HOST = "localhost"
+		KLOCWORK_LICENSE_HOST = "10.250.18.209"
 		KLOCWORK_LICENSE_PORT = "27000"
 		KLOCWORK_LTOKEN = ""		
     }
